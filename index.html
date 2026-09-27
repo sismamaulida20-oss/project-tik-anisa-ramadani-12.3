@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perawatan Sekolah</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">🏫</div>
+        <div>
+            <h1>Perawatan Sekolah</h1>
+            <p>SMA At-Tijaarah</p>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- BERANDA -->
+        <section id="beranda" class="page active">
+            <div class="welcome">
+                <h2>Selamat Datang 👋</h2>
+                <p>Kelola dan pantau perawatan fasilitas sekolah dengan mudah.</p>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <span>🏫</span>
+                    <h3>Fasilitas</h3>
+                    <p id="jumlahFasilitas">6 fasilitas</p>
+                </div>
+
+                <div class="card">
+                    <span>📝</span>
+                    <h3>Laporan</h3>
+                    <p id="jumlahLaporan">0 laporan</p>
+                </div>
+
+                <div class="card">
+                    <span>🛠️</span>
+                    <h3>Perawatan</h3>
+                    <p>Terjadwal</p>
+                </div>
+            </div>
+
+            <div class="info-box">
+                <h3>📢 Informasi</h3>
+                <p>
+                    Gunakan aplikasi ini untuk melaporkan kerusakan
+                    dan membantu menjaga fasilitas sekolah tetap terawat.
+                </p>
+            </div>
+        </section>
+
+        <!-- LAPORAN -->
+        <section id="laporan" class="page">
+            <h2>📝 Laporan Kerusakan</h2>
+
+            <form id="formLaporan">
+                <label>Nama fasilitas</label>
+                <input type="text" id="namaFasilitas" placeholder="Contoh: Lampu kelas" required>
+
+                <label>Lokasi</label>
+                <input type="text" id="lokasi" placeholder="Contoh: Kelas XII IPA" required>
+
+                <label>Jenis kerusakan</label>
+                <select id="jenisKerusakan" required>
+                    <option value="">-- Pilih --</option>
+                    <option>Rusak ringan</option>
+                    <option>Rusak sedang</option>
+                    <option>Rusak berat</option>
+                </select>
+
+                <label>Keterangan</label>
+                <textarea id="keterangan" placeholder="Jelaskan kerusakan..." required></textarea>
+
+                <button type="submit">📤 Kirim Laporan</button>
+            </form>
+        </section>
+
+        <!-- FASILITAS -->
+        <section id="fasilitas" class="page">
+            <h2>🏫 Fasilitas Sekolah</h2>
+
+            <div class="facility-list">
+
+                <div class="facility">
+                    <div>
+                        <h3>🪑 Meja dan Kursi</h3>
+                        <p>Fasilitas ruang kelas</p>
+                    </div>
+                    <span class="baik">Baik</span>
+                </div>
+
+                <div class="facility">
+                    <div>
+                        <h3>💡 Lampu</h3>
+                        <p>Penerangan kelas</p>
+                    </div>
+                    <span class="perawatan">Perawatan</span>
+                </div>
+
+                <div class="facility">
+                    <div>
+                        <h3>🌀 Kipas Angin</h3>
+                        <p>Fasilitas ruang kelas</p>
+                    </div>
+                    <span class="baik">Baik</span>
+                </div>
+
+                <div class="facility">
+                    <div>
+                        <h3>🚽 Toilet</h3>
+                        <p>Fasilitas kebersihan</p>
+                    </div>
+                    <span class="baik">Baik</span>
+                </div>
+
+                <div class="facility">
+                    <div>
+                        <h3>🏀 Lapangan</h3>
+                        <p>Fasilitas olahraga</p>
+                    </div>
+                    <span class="baik">Baik</span>
+                </div>
+
+                <div class="facility">
+                    <div>
+                        <h3>📚 Perpustakaan</h3>
+                        <p>Fasilitas belajar</p>
+                    </div>
+                    <span class="baik">Baik</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- JADWAL -->
+        <section id="jadwal" class="page">
+            <h2>📅 Jadwal Perawatan</h2>
+
+            <div class="schedule">
+                <div class="schedule-item">
+                    <div class="date">05<br><small>OKT</small></div>
+                    <div>
+                        <h3>Pengecekan Lampu</h3>
+                        <p>Ruang kelas XII</p>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="date">10<br><small>OKT</small></div>
+                    <div>
+                        <h3>Pembersihan Toilet</h3>
+                        <p>Toilet sekolah</p>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="date">15<br><small>OKT</small></div>
+                    <div>
+                        <h3>Pengecekan Kipas</h3>
+                        <p>Seluruh ruang kelas</p>
+                    </div>
+                </div>
+
+                <div class="schedule-item">
+                    <div class="date">20<br><small>OKT</small></div>
+                    <div>
+                        <h3>Perawatan Lapangan</h3>
+                        <p>Lapangan sekolah</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RIWAYAT -->
+        <section id="riwayat" class="page">
+            <h2>📜 Riwayat Laporan</h2>
+
+            <div id="daftarRiwayat">
+                <div class="empty">
+                    <span>📭</span>
+                    <p>Belum ada laporan.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROFIL -->
+        <section id="profil" class="page">
+            <h2>👤 Profil Aplikasi</h2>
+
+            <div class="profile">
+                <div class="school-icon">🏫</div>
+                <h2>SMA At-Tijaarah</h2>
+                <p>Aplikasi Perawatan Sekolah</p>
+
+                <div class="profile-info">
+                    <p><strong>Tujuan:</strong> Membantu menjaga fasilitas sekolah.</p>
+                    <p><strong>Pengguna:</strong> Siswa dan warga sekolah.</p>
+                    <p><strong>Versi:</strong> 1.0</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- NAVIGASI BAWAH -->
+    <nav>
+        <button onclick="bukaHalaman('beranda')" class="nav-btn active">
+            <span>🏠</span>
+            <small>Beranda</small>
+        </button>
+
+        <button onclick="bukaHalaman('laporan')" class="nav-btn">
+            <span>📝</span>
+            <small>Laporan</small>
+        </button>
+
+        <button onclick="bukaHalaman('fasilitas')" class="nav-btn">
+            <span>🏫</span>
+            <small>Fasilitas</small>
+        </button>
+
+        <button onclick="bukaHalaman('jadwal')" class="nav-btn">
+            <span>📅</span>
+            <small>Jadwal</small>
+        </button>
+
+        <button onclick="bukaHalaman('riwayat')" class="nav-btn">
+            <span>📜</span>
+            <small>Riwayat</small>
+        </button>
+
+        <button onclick="bukaHalaman('profil')" class="nav-btn">
+            <span>👤</span>
+            <small>Profil</small>
+        </button>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
